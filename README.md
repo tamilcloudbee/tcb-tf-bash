@@ -5,14 +5,23 @@ The provided Bash script scans a given Terraform repository path and extracts al
 
 ## Prerequisites
 - Ensure you have a valid Terraform repository.
-- The script should have execution permissions (`chmod +x script.sh`).
+- Clone the repository:
+  ```bash
+  git clone https://github.com/tamilcloudbee/tcb-tf-bash.git
+  cd tcb-tf-bash.git
+
+  ```
+- The script should have execution permissions:
+  ```bash
+  chmod +x tfcontent-generator.sh
+  ```
 - Provide the repository path as an argument when executing the script.
 
 ## Execution Steps
 1. Navigate to the directory containing the script.
 2. Run the script with the Terraform repository path as an argument:
    ```bash
-   ./script.sh ~/Desktop/tf-networking
+   ./tfcontent-generator.sh ~/Desktop/tf-networking
    ```
 
 ## What Happens When You Run the Script?
@@ -72,3 +81,5 @@ tf-networking
 
 ## Conclusion
 This script is useful for extracting and reviewing Terraform configurations quickly. It helps in analyzing configurations without navigating through multiple files manually.
+
+
